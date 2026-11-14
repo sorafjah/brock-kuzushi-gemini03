@@ -102,7 +102,14 @@
             border-radius: 20px;
             border: 1px solid rgba(255,255,255,0.1);
         }
-    </style>
+    /* スマホ用レイアウト調整2 */
+@media (orientation:landscape) and (max-height:500px), (orientation:portrait) and (max-width:500px) {
+  #ui-layer { box-sizing:border-box; padding:0 8px; font-size:0.85rem; gap:4px; }
+  .stat-box { padding:3px 10px; white-space:nowrap; }
+  body { margin:0; }
+}
+/* /スマホ用レイアウト調整2 */
+</style>
 </head>
 <body>
 
